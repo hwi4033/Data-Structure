@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Data-Structure\\Program\\Program.csproj",
-      "projectName": "Program",
-      "projectPath": "C:\\Users\\Administrator\\Desktop\\Data-Structure\\Program\\Program.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Data-Structure\\Class1th (Single Linked List)\\Class1th (Single Linked List).csproj",
+      "projectName": "Class1th (Single Linked List)",
+      "projectPath": "C:\\Users\\Administrator\\Desktop\\Data-Structure\\Class1th (Single Linked List)\\Class1th (Single Linked List).csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Desktop\\Data-Structure\\Program\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\Desktop\\Data-Structure\\Class1th (Single Linked List)\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",

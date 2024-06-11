@@ -3,21 +3,24 @@ using System.Xml.Linq;
 
 namespace Program
 {
-    public class SingleLinkedList<T>
+    public class DoubleLinkedList<T>
     {
-        private class Node
+        public class Node
         {
             public T data;
+            public Node previous;
             public Node next;
         }
 
-        private Node head;
         private int size;
+        private Node head;
+        private Node tail;
 
-        public SingleLinkedList()
+        public DoubleLinkedList()
         {
             size = 0;
             head = null;
+            tail = null;
         }
 
         public int Size
@@ -25,20 +28,28 @@ namespace Program
             get { return size; }
         }
 
-        public void PushFront(T data)
+        public void PushBack(T data)
         {
-            if (head == null)
-            {
-                head = new Node();
-                head.data = data;
-                head.next = null;
+            Node newNode = new Node();
+
+            if (tail == null)
+            {                
+                head = newNode;
+                tail = newNode;
+
+                newNode.data = data;
+                newNode.next = null;
+                newNode.previous = head;
             }
             else
             {
-                Node newNode = new Node();
+                tail.next = newNode;
+                newNode.previous = tail;
+
+                tail = newNode;
+
                 newNode.data = data;
-                newNode.next = head;
-                head = newNode;
+                newNode.next = null;
             }
 
             size++;
@@ -52,22 +63,21 @@ namespace Program
                 Console.WriteLine(currentNode.data);
 
                 currentNode = currentNode.next;
-            }           
+            }
         }
-
     }
 
     internal class Program
     {
         static void Main(string[] args)
         {
-            SingleLinkedList<int> singlelinkedlist = new SingleLinkedList<int>();
-            singlelinkedlist.PushFront(30);
-            singlelinkedlist.PushFront(20);
-            singlelinkedlist.PushFront(10);
+            DoubleLinkedList<int> doubleLinkedList = new DoubleLinkedList<int>();
+            doubleLinkedList.PushBack(10);
+            doubleLinkedList.PushBack(20);
+            doubleLinkedList.PushBack(30);
 
-            singlelinkedlist.Show();
-            Console.WriteLine("size : " + singlelinkedlist.Size);
+            Console.WriteLine("size : " + doubleLinkedList.Size);
+            doubleLinkedList.Show();
         }
     }
 }
