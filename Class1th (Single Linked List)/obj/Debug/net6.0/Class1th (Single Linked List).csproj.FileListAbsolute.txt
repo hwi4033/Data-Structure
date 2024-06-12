@@ -1,0 +1,14 @@
+C:\Users\Administrator\Desktop\Data-Structure\Class1th (Single Linked List)\bin\Debug\net6.0\Class1th (Single Linked List).exe
+C:\Users\Administrator\Desktop\Data-Structure\Class1th (Single Linked List)\bin\Debug\net6.0\Class1th (Single Linked List).deps.json
+C:\Users\Administrator\Desktop\Data-Structure\Class1th (Single Linked List)\bin\Debug\net6.0\Class1th (Single Linked List).runtimeconfig.json
+C:\Users\Administrator\Desktop\Data-Structure\Class1th (Single Linked List)\bin\Debug\net6.0\Class1th (Single Linked List).dll
+C:\Users\Administrator\Desktop\Data-Structure\Class1th (Single Linked List)\bin\Debug\net6.0\Class1th (Single Linked List).pdb
+C:\Users\Administrator\Desktop\Data-Structure\Class1th (Single Linked List)\obj\Debug\net6.0\Class1th (Single Linked List).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\Data-Structure\Class1th (Single Linked List)\obj\Debug\net6.0\Class1th (Single Linked List).AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Data-Structure\Class1th (Single Linked List)\obj\Debug\net6.0\Class1th (Single Linked List).AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Data-Structure\Class1th (Single Linked List)\obj\Debug\net6.0\Class1th (Single Linked List).csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Data-Structure\Class1th (Single Linked List)\obj\Debug\net6.0\Class1th (Single Linked List).dll
+C:\Users\Administrator\Desktop\Data-Structure\Class1th (Single Linked List)\obj\Debug\net6.0\refint\Class1th (Single Linked List).dll
+C:\Users\Administrator\Desktop\Data-Structure\Class1th (Single Linked List)\obj\Debug\net6.0\Class1th (Single Linked List).pdb
+C:\Users\Administrator\Desktop\Data-Structure\Class1th (Single Linked List)\obj\Debug\net6.0\Class1th (Single Linked List).genruntimeconfig.cache
+C:\Users\Administrator\Desktop\Data-Structure\Class1th (Single Linked List)\obj\Debug\net6.0\ref\Class1th (Single Linked List).dll
