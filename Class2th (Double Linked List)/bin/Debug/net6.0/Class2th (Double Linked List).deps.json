@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Class2th (Double Linked List)/1.0.0": {
+        "runtime": {
+          "Class2th (Double Linked List).dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Class2th (Double Linked List)/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
