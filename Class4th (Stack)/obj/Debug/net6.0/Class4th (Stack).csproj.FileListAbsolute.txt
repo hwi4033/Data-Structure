@@ -1,0 +1,14 @@
+C:\Users\Administrator\Desktop\Data-Structure\Class4th (Stack)\bin\Debug\net6.0\Class4th (Stack).exe
+C:\Users\Administrator\Desktop\Data-Structure\Class4th (Stack)\bin\Debug\net6.0\Class4th (Stack).deps.json
+C:\Users\Administrator\Desktop\Data-Structure\Class4th (Stack)\bin\Debug\net6.0\Class4th (Stack).runtimeconfig.json
+C:\Users\Administrator\Desktop\Data-Structure\Class4th (Stack)\bin\Debug\net6.0\Class4th (Stack).dll
+C:\Users\Administrator\Desktop\Data-Structure\Class4th (Stack)\bin\Debug\net6.0\Class4th (Stack).pdb
+C:\Users\Administrator\Desktop\Data-Structure\Class4th (Stack)\obj\Debug\net6.0\Class4th (Stack).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\Data-Structure\Class4th (Stack)\obj\Debug\net6.0\Class4th (Stack).AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Data-Structure\Class4th (Stack)\obj\Debug\net6.0\Class4th (Stack).AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Data-Structure\Class4th (Stack)\obj\Debug\net6.0\Class4th (Stack).csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Data-Structure\Class4th (Stack)\obj\Debug\net6.0\Class4th (Stack).dll
+C:\Users\Administrator\Desktop\Data-Structure\Class4th (Stack)\obj\Debug\net6.0\refint\Class4th (Stack).dll
+C:\Users\Administrator\Desktop\Data-Structure\Class4th (Stack)\obj\Debug\net6.0\Class4th (Stack).pdb
+C:\Users\Administrator\Desktop\Data-Structure\Class4th (Stack)\obj\Debug\net6.0\Class4th (Stack).genruntimeconfig.cache
+C:\Users\Administrator\Desktop\Data-Structure\Class4th (Stack)\obj\Debug\net6.0\ref\Class4th (Stack).dll

@@ -1,0 +1,14 @@
+C:\Users\Administrator\Desktop\Data-Structure\Class5th (Linear Queue)\bin\Debug\net6.0\Class5th (Linear Queue).exe
+C:\Users\Administrator\Desktop\Data-Structure\Class5th (Linear Queue)\bin\Debug\net6.0\Class5th (Linear Queue).deps.json
+C:\Users\Administrator\Desktop\Data-Structure\Class5th (Linear Queue)\bin\Debug\net6.0\Class5th (Linear Queue).runtimeconfig.json
+C:\Users\Administrator\Desktop\Data-Structure\Class5th (Linear Queue)\bin\Debug\net6.0\Class5th (Linear Queue).dll
+C:\Users\Administrator\Desktop\Data-Structure\Class5th (Linear Queue)\bin\Debug\net6.0\Class5th (Linear Queue).pdb
+C:\Users\Administrator\Desktop\Data-Structure\Class5th (Linear Queue)\obj\Debug\net6.0\Class5th (Linear Queue).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\Data-Structure\Class5th (Linear Queue)\obj\Debug\net6.0\Class5th (Linear Queue).AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Data-Structure\Class5th (Linear Queue)\obj\Debug\net6.0\Class5th (Linear Queue).AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Data-Structure\Class5th (Linear Queue)\obj\Debug\net6.0\Class5th (Linear Queue).csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Data-Structure\Class5th (Linear Queue)\obj\Debug\net6.0\Class5th (Linear Queue).dll
+C:\Users\Administrator\Desktop\Data-Structure\Class5th (Linear Queue)\obj\Debug\net6.0\refint\Class5th (Linear Queue).dll
+C:\Users\Administrator\Desktop\Data-Structure\Class5th (Linear Queue)\obj\Debug\net6.0\Class5th (Linear Queue).pdb
+C:\Users\Administrator\Desktop\Data-Structure\Class5th (Linear Queue)\obj\Debug\net6.0\Class5th (Linear Queue).genruntimeconfig.cache
+C:\Users\Administrator\Desktop\Data-Structure\Class5th (Linear Queue)\obj\Debug\net6.0\ref\Class5th (Linear Queue).dll

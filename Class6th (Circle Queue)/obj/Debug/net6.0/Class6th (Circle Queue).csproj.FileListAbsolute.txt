@@ -1,0 +1,14 @@
+C:\Users\Administrator\Desktop\Data-Structure\Class6th (Circle Queue)\bin\Debug\net6.0\Class6th (Circle Queue).exe
+C:\Users\Administrator\Desktop\Data-Structure\Class6th (Circle Queue)\bin\Debug\net6.0\Class6th (Circle Queue).deps.json
+C:\Users\Administrator\Desktop\Data-Structure\Class6th (Circle Queue)\bin\Debug\net6.0\Class6th (Circle Queue).runtimeconfig.json
+C:\Users\Administrator\Desktop\Data-Structure\Class6th (Circle Queue)\bin\Debug\net6.0\Class6th (Circle Queue).dll
+C:\Users\Administrator\Desktop\Data-Structure\Class6th (Circle Queue)\bin\Debug\net6.0\Class6th (Circle Queue).pdb
+C:\Users\Administrator\Desktop\Data-Structure\Class6th (Circle Queue)\obj\Debug\net6.0\Class6th (Circle Queue).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\Data-Structure\Class6th (Circle Queue)\obj\Debug\net6.0\Class6th (Circle Queue).AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Data-Structure\Class6th (Circle Queue)\obj\Debug\net6.0\Class6th (Circle Queue).AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Data-Structure\Class6th (Circle Queue)\obj\Debug\net6.0\Class6th (Circle Queue).csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Data-Structure\Class6th (Circle Queue)\obj\Debug\net6.0\Class6th (Circle Queue).dll
+C:\Users\Administrator\Desktop\Data-Structure\Class6th (Circle Queue)\obj\Debug\net6.0\refint\Class6th (Circle Queue).dll
+C:\Users\Administrator\Desktop\Data-Structure\Class6th (Circle Queue)\obj\Debug\net6.0\Class6th (Circle Queue).pdb
+C:\Users\Administrator\Desktop\Data-Structure\Class6th (Circle Queue)\obj\Debug\net6.0\Class6th (Circle Queue).genruntimeconfig.cache
+C:\Users\Administrator\Desktop\Data-Structure\Class6th (Circle Queue)\obj\Debug\net6.0\ref\Class6th (Circle Queue).dll

@@ -1,97 +1,111 @@
-﻿namespace Program
+﻿using System.Data.Common;
+
+namespace Program
 {
-    public class CircleQueue<T>
+    public class Vector<T>
     {
-        private int count;
-        private int arraySize;
+        private int size;
+        private int capacity;
+
         private T[] array;
-        private int front;
-        private int rear;
-        private T error;
-
-        public CircleQueue()
+        
+        public Vector()
         {
-            count = 0;
-            arraySize = 5;
-            front = arraySize - 1;
-            rear = arraySize - 1;
-            array = new T[arraySize];
+            size = 0;
+            capacity = 0;
+
+            array = null;
         }
 
-        public int Front
+        public T this [int index]
         {
-            get { return front; }
-        }
-
-        public int Rear
-        {
-            get { return rear; }
-        }
+            get { return array[index]; }
+        } 
 
         public int Count()
         {
-            return count;
+            return size;
         }
 
-        public void Enqueue(T data)
+        public void Reserve(int newSize)
         {
-            if ()
+            if (capacity > newSize)
             {
-                Console.WriteLine("Circle Queue is Full");
+                return;
             }
             else
             {
-                array[rear++] = data;
-                if (rear == arraySize) rear = 0;
-                count++;
+                Resize(newSize);
             }
         }
 
-        public T Dequeue()
+        public void Resize(int newSize)
         {
-            if (rear == front)
+            capacity = newSize;
+            T[] newArray = new T[capacity];
+                          
+            for (int i = 0; i < size; i++)
             {
-                Console.WriteLine("Circle Queue is Empty");
-                return error;
+                newArray[i] = array[i];
             }
-            else
-            {
-                T data = array[front];
-                array[front++] = default;
-                if (front == arraySize) front = 0;
-                count--;
-                return data;
-            }
+
+            array = newArray;
         }
 
-        public T Peek()
+        public void Add(T data)
         {
-            if (front == rear)
+            if (capacity <= 0)
             {
-                Console.WriteLine("Circle Queue is Empty");
-                return error;
+                Resize(1);
+            }
+            else if (size >= capacity)
+            {
+                Resize(capacity * 2);
+            }
+
+            array[size++] = data;
+        }
+
+        public void RemoveAt(int index)
+        {
+            if (index > size)
+            {
+                Console.WriteLine("Error");
             }
             else
             {
-                return array[front];
+                for (int i = index; i < size; i++)
+                {
+                    if (i == size - 1)
+                    {
+                        array[i] = default;
+                        size--;
+                        break;
+                    }
+
+                    array[i] = array[i + 1];
+                }
             }
         }
     }
+
     internal class Program
     {
         static void Main(string[] args)
         {
-            CircleQueue<int> circlequeue = new CircleQueue<int>();
+            Vector<int> vector = new Vector<int>();
 
-            circlequeue.Enqueue(10);
-            circlequeue.Enqueue(20);
-            circlequeue.Enqueue(30);
+            vector.Reserve(4);
+            vector.Add(10);
+            vector.Add(20);
+            vector.Add(30);
+            vector.Add(40);
+            vector.RemoveAt(3);
 
-
-            Console.WriteLine("front : " + circlequeue.Front);
-            Console.WriteLine("rear : " + circlequeue.Rear);
-            Console.WriteLine("count : " + circlequeue.Count());
-            Console.WriteLine("Peek : " + circlequeue.Peek());
+            for (int i = 0; i < vector.Count(); i++)
+            {
+                Console.WriteLine(vector[i]);
+            }
         }
     }
 }
