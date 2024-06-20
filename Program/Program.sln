@@ -17,9 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Class5th (Linear Queue)", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Class6th (Circle Queue)", "..\Class6th (Circle Queue)\Class6th (Circle Queue).csproj", "{9F70D9B7-48A1-4192-B4E0-532EA886076E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class7th (Vector)", "..\Class7th (Vector)\Class7th (Vector).csproj", "{081C5987-82DF-4292-83F7-2B71F2FF9B7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Class7th (Vector)", "..\Class7th (Vector)\Class7th (Vector).csproj", "{081C5987-82DF-4292-83F7-2B71F2FF9B7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class8th (String)", "..\Class8th (String)\Class8th (String).csproj", "{7CC60C7D-A5C0-435B-8A49-015F7059CA7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Class8th (String)", "..\Class8th (String)\Class8th (String).csproj", "{7CC60C7D-A5C0-435B-8A49-015F7059CA7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class9th (File Input & Output)", "..\Class9th (File Input & Output)\Class9th (File Input & Output).csproj", "{5DE521CA-C159-4091-B9BA-7DC6F0A027E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{7CC60C7D-A5C0-435B-8A49-015F7059CA7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CC60C7D-A5C0-435B-8A49-015F7059CA7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CC60C7D-A5C0-435B-8A49-015F7059CA7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DE521CA-C159-4091-B9BA-7DC6F0A027E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DE521CA-C159-4091-B9BA-7DC6F0A027E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DE521CA-C159-4091-B9BA-7DC6F0A027E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DE521CA-C159-4091-B9BA-7DC6F0A027E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
