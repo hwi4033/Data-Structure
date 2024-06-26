@@ -1,128 +1,91 @@
 ﻿namespace Program
 {
-    public class Heap
+    public class AdjacencyList<T>
     {
-        private int size;
+        private class Node
+        {
+            private T data;
+            private Node next;
+
+            public Node(T data, Node link = null)
+            {
+                this.data = data;
+                next = link;
+            }
+        }
+
+        private int size;       // 정점의 개수
         private int arraySize;
-        private int [] array;
+
+        private T[] vertex;     // 정점의 집합
+        private Node[] list;    // 인접 리스트
         
-        public Heap()
+        public AdjacencyList()
         {
             size = 0;
-            arraySize = 8;
+            arraySize = 10;
 
-            array = new int[arraySize];
+            vertex = new T[arraySize];
+            list = new Node[arraySize];
         }
 
-        private void Swap(ref int x, ref int y)
+        public void Insert(T data)
         {
-            int temp = x;
-            x = y;
-            y = temp;
+            if (size >= arraySize)
+            {
+                Console.WriteLine("Adjacency is Full");
+                return;
+            }
+
+            vertex[size++] = data;
         }
 
-        public void Insert(int data)
-        {
-            if (size >= arraySize - 1)
-            {
-                Console.WriteLine("Heap is Full");
-            }
-            else
-            {
-                array[++size] = data;
-
-                int child = size;
-                int parent = size / 2;
-
-                while (child > 1)
-                {
-                    if (array[child] > array[parent])
-                    {
-                        Swap(ref array[child], ref array[parent]);
-                    }
-
-                    child = parent;
-                    parent = child / 2;
-                }
-            }
-        }
-
-        public int Remove()
+        public void Connect(int i, int j)
         {
             if (size <= 0)
             {
-                Console.WriteLine("Heap is Empty");
-                return -99999;
+                Console.WriteLine("Adjacency is Empty");
             }
 
-            int temp = array[1];
-            array[1] = array[size];
-            array[size--] = 0;
-            
-            if (size == 1)
+            if (i > size || j > size)
             {
-                return temp;
-            }
-            
-            int parent = 1;
-            
-            if (array[parent] < array[parent * 2])
-            {
-                if (array[parent] < array[parent * 2 + 1])
-                {
-
-                }
-                else
-                {
-                    
-                }
-            }
-            while (parent >= size - 1)
-            {
-                if (array[parent * 2] > array[parent * 2 + 1])
-                {
-                    Swap(ref array[parent], ref array[parent * 2]);
-
-                    parent = parent * 2;
-                }
-                else
-                {
-                    Swap(ref array[parent], ref array[parent * 2 + 1]);
-
-                    parent = parent * 2 + 1;
-                }
+                Console.WriteLine("Out of Range");
             }
 
-            return temp;
+            list[i]
         }
 
         public void Show()
         {
-            for (int i = 1; i <= size; i++)
+            for (int i = 0; i < size; i++)
             {
-                Console.WriteLine("[" + i + "] : " + array[i]);
+                Console.Write(vertex[i] + " ");
             }
-
-            Console.WriteLine("size : " + size);
         }
     }
-
     internal class Program
     {
         static void Main(string[] args)
         {
-            Heap heap = new Heap();
+            #region 인접 리스트
+            // 그래프의 각 정점에 인접한 정점들을 연결 리스트로 표현하는 방법이다.
 
-            heap.Insert(1);
-            heap.Insert(3);
-            heap.Insert(5);
-            heap.Insert(7);
-            heap.Insert(10);
-            heap.Insert(8);
-            heap.Insert(9);
-            //Console.WriteLine(heap.Remove());
+            // 장점
+            // 그래프의 모든 간선의 수를 O(V + E)로 표현할 수 있다.
 
-            heap.Show();
+            // 단점
+            // 두 정점을 연결하는 간선을 조회하거나 정점의 차수를 알기 위해서
+            // 정점의 인접 리스트를 모두 탐색해야 하므로, 정점의 차수만큼의 시간이 필요하다.
+
+            AdjacencyList<char> adjacencyList = new AdjacencyList<char>();
+
+            adjacencyList.Insert('A');
+            adjacencyList.Insert('B');
+            adjacencyList.Insert('C');
+            adjacencyList.Insert('D');
+
+            adjacencyList.Show();
+            #endregion
         }
     }
 }
