@@ -1,91 +1,154 @@
 ﻿namespace Program
 {
-    public class AdjacencyList<T>
+    public class BinarySearchTree
     {
-        private class Node
+        public class Node
         {
-            private T data;
-            private Node next;
+            public int data;
 
-            public Node(T data, Node link = null)
-            {
-                this.data = data;
-                next = link;
-            }
+            public Node left;
+            public Node right;
         }
 
-        private int size;       // 정점의 개수
-        private int arraySize;
+        public Node root;
 
-        private T[] vertex;     // 정점의 집합
-        private Node[] list;    // 인접 리스트
-        
-        public AdjacencyList()
+        public BinarySearchTree()
         {
-            size = 0;
-            arraySize = 10;
-
-            vertex = new T[arraySize];
-            list = new Node[arraySize];
+            root = null;
         }
 
-        public void Insert(T data)
+        private Node CreateNode(int data)
         {
-            if (size >= arraySize)
+            Node newNode = new Node();
+
+            newNode.data = data;
+
+            newNode.left = null;
+            newNode.right = null;
+
+            return newNode;
+        }
+
+        public void Insert(int data)
+        {
+            if (root == null)
             {
-                Console.WriteLine("Adjacency is Full");
+                root = CreateNode(data);
                 return;
             }
 
-            vertex[size++] = data;
+            Node currentNode = root;
+
+            while (currentNode != null)
+            {
+                if (currentNode.data > data)
+                {
+                    if (currentNode.left == null)
+                    {
+                        currentNode.left = CreateNode(data);
+                        break;
+                    }
+                    else
+                    {
+                        currentNode = currentNode.left;
+                    }
+                }
+                else if (currentNode.data < data)
+                {
+                    if (currentNode.right == null)
+                    {
+                        currentNode.right = CreateNode(data);
+                        break;
+                    }
+                    else
+                    {
+                        currentNode = currentNode.right;
+                    }
+                }
+                else
+                {
+                    return;
+                }
+            }                        
         }
 
-        public void Connect(int i, int j)
+        //public int Remove(int data)
+        //{
+        //    if (root == null)
+        //    {
+        //        Console.WriteLine("Binary Search Tree is Empty");
+        //        return -99999;
+        //    }
+        //
+        //    int temp = 
+        //
+        //    Node currentNode = root;
+        //
+        //    if (currentNode.data == data)
+        //    {
+        //
+        //    }
+        //}
+
+        public bool Find(int data)
         {
-            if (size <= 0)
+            if (root == null)
             {
-                Console.WriteLine("Adjacency is Empty");
+                Console.WriteLine("Binary Search Tree is Empty");
+                return false;
             }
 
-            if (i > size || j > size)
+            Node currentNode = root;
+
+            while (currentNode != null)
             {
-                Console.WriteLine("Out of Range");
+                if (currentNode.data == data)
+                {
+                    return true;
+                }
+                else if (currentNode.data > data)
+                {
+                    currentNode = currentNode.left;
+                }
+                else
+                {
+                    currentNode = currentNode.right;
+                }
             }
 
-            list[i]
+            return false;
         }
 
-        public void Show()
+        public void Inorder(Node root)
         {
-            for (int i = 0; i < size; i++)
+            if (root != null)
             {
-                Console.Write(vertex[i] + " ");
+                Inorder(root.left);
+
+                Console.Write(root.data + " ");
+
+                Inorder(root.right);
             }
         }
     }
+
     internal class Program
     {
         static void Main(string[] args)
         {
-            #region 인접 리스트
-            // 그래프의 각 정점에 인접한 정점들을 연결 리스트로 표현하는 방법이다.
+            BinarySearchTree binarysearchtree = new BinarySearchTree();
 
-            // 장점
-            // 그래프의 모든 간선의 수를 O(V + E)로 표현할 수 있다.
+            binarysearchtree.Insert(10);
+            binarysearchtree.Insert(15);
+            binarysearchtree.Insert(7);
+            binarysearchtree.Insert(9);
+            binarysearchtree.Insert(13);
+            binarysearchtree.Insert(12);
+            binarysearchtree.Insert(8);
 
-            // 단점
-            // 두 정점을 연결하는 간선을 조회하거나 정점의 차수를 알기 위해서
-            // 정점의 인접 리스트를 모두 탐색해야 하므로, 정점의 차수만큼의 시간이 필요하다.
+            Console.WriteLine("Find : " + binarysearchtree.Find(8));
 
-            AdjacencyList<char> adjacencyList = new AdjacencyList<char>();
-
-            adjacencyList.Insert('A');
-            adjacencyList.Insert('B');
-            adjacencyList.Insert('C');
-            adjacencyList.Insert('D');
-
-            adjacencyList.Show();
-            #endregion
+            binarysearchtree.Inorder(binarysearchtree.root);
         }
     }
 }
